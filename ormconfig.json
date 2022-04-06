@@ -1,0 +1,12 @@
+{
+    "type": "postgres",
+    "port": 35000,
+    "entities": ["dist/core/entities/**.entity.js"],
+    "migrationsRun": false,
+    "synchronize": false,
+    "logging": false,
+    "host": "127.0.0.1",
+    "database": "gtravel",
+    "username": "gtravel",
+    "password": "gtravel"
+  }
