@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:12.2-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: 'gtravel'
+      POSTGRES_USER: 'gtravel'
+      POSTGRES_PASSWORD: 'gtravel'
+    ports:
+      - '35000:5432'
