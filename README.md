@@ -25,7 +25,7 @@ yarn
 1. Create postgres docker container.
 
 ```bash
-docker-compose up -d postgres
+docker-compose up -d
 ```
 
 2. Build temi cloud back project.
@@ -52,4 +52,4 @@ yarn start:dev
 
 Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
 
-created with `Nest.js`
+P.S created with `Nest.js`
