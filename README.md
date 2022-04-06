@@ -1,8 +1,20 @@
 # GTravel - Back
 
-`Nest.js` Backend
+## Prerequisites
 
-To install js libraries run following command from gtravel-back/ folder.
+1. Instal docker
+
+2. Instal Node js
+
+3. Install NestJs with command in your cmd terminal
+
+```bash
+npm i -g @nestjs/cli
+```
+
+4. install yarn
+
+5. To install js libraries run following command from gtravel-back/ folder.
 
 ```bash
 yarn
@@ -39,3 +51,5 @@ yarn start:dev
 ```
 
 Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
+
+created with `Nest.js`
