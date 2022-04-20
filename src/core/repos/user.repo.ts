@@ -43,14 +43,6 @@ export class UserRepo {
     });
   }
 
-  public async findByInvitationToken(
-    invitationToken: string,
-  ): Promise<UserEntity | undefined> {
-    return this.repo.findOne({
-      where: { invitationToken },
-    });
-  }
-
   public async findByIds(ids: string[]): Promise<UserEntity[]> {
     if (ids.length === 0) {
       return [];
