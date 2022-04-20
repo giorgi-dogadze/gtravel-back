@@ -14,7 +14,9 @@ npm i -g @nestjs/cli
 
 4. install yarn
 
-5. To install js libraries run following command from gtravel-back/ folder.
+5. add gtravel-back/.env file and add data from env.example
+
+6. To install js libraries run following command from gtravel-back/ folder.
 
 ```bash
 yarn
