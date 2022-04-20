@@ -4,6 +4,13 @@ import { AppService } from './services/app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from './core/entities/user.entity';
 import { UserRepo } from './core/repos/user.repo';
+import { config } from 'dotenv';
+import { JwtStrategy } from './strategies/jwt.strategy';
+import { AccountController } from './controllers/account.controller';
+import { AccountService } from './services/account.service';
+import { LocalStrategy } from './strategies/local.strategy';
+
+config();
 
 @Module({
   imports: [
@@ -21,7 +28,25 @@ import { UserRepo } from './core/repos/user.repo';
     }),
     TypeOrmModule.forFeature([UserEntity]),
   ],
-  controllers: [AppController],
-  providers: [AppService, UserRepo],
+  controllers: [AppController, AccountController],
+  providers: [
+    AppService,
+    AccountService,
+
+    UserRepo,
+
+    JwtStrategy,
+    LocalStrategy,
+
+    {
+      provide: 'JWT_TOKEN',
+      useValue: process.env.JWT_TOKEN,
+    },
+
+    {
+      provide: 'JWT_EXPIRES_IN',
+      useValue: process.env.JWT_EXPIRES_IN,
+    },
+  ],
 })
 export class AppModule {}
