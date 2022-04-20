@@ -15,24 +15,4 @@ export class AppService {
     const users = await this.userRepo.findAll(0, 1000);
     return users;
   }
-
-  async createUser(): Promise<UserEntity> {
-    const user = new UserEntity();
-
-    user.id = uuid();
-    user.dataState = 'gio';
-    user.email = uuid();
-    user.inviteSource = '';
-    user.state = '';
-    user.isEmailVerified = false;
-    user.linkedin = '';
-    user.phone = '';
-    user.slug = uuid();
-    user.state = '';
-    user.name = 'gio';
-
-    await this.userRepo.create(user);
-
-    return user;
-  }
 }
