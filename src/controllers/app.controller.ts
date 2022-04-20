@@ -10,14 +10,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  @Get('/users')
-  getUsers(): Promise<UserEntity[]> {
-    return this.appService.getUsers();
-  }
-
-  @Post('/users')
-  createUser(): Promise<UserEntity> {
-    return this.appService.createUser();
-  }
 }
