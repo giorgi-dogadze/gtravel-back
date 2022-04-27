@@ -13,4 +13,9 @@ export class DishRepo {
   public async findAll(): Promise<DishEntity[]> {
     return this.repo.find();
   }
+
+  public async save(dish: DishEntity): Promise<DishEntity> {
+    await this.repo.save(dish);
+    return dish;
+  }
 }

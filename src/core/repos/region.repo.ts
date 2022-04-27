@@ -15,4 +15,9 @@ export class RegionRepo {
   public async findAll(): Promise<RegionEntity[]> {
     return this.repo.find({ relations });
   }
+
+  public async save(region: RegionEntity): Promise<RegionEntity> {
+    await this.repo.save(region);
+    return region;
+  }
 }
