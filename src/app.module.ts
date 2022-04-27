@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './controllers/app.controller';
-import { AppService } from './services/app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from './core/entities/user.entity';
 import { UserRepo } from './core/repos/user.repo';
@@ -13,6 +11,18 @@ import { RegionEntity } from './core/entities/region.entity';
 import { CityEntity } from './core/entities/city.entity';
 import { TravelScheduleEntity } from './core/entities/travel-schedule.entity';
 import { DishEntity } from './core/entities/dish.entity';
+import { CityController } from './controllers/city.controller';
+import { RegionController } from './controllers/region.controller';
+import { TravelScheduleController } from './controllers/travel-schedule.controller';
+import { DishController } from './controllers/dish.controller';
+import { CityRepo } from './core/repos/city.repo';
+import { DishRepo } from './core/repos/dish.repo';
+import { RegionRepo } from './core/repos/region.repo';
+import { TravelScheduleRepo } from './core/repos/travel-schedule.repo';
+import { CityService } from './services/city.service';
+import { DishService } from './services/dish.service';
+import { RegionService } from './services/region.service';
+import { TravelScheduleService } from './services/travel-schedule.service';
 
 config();
 
@@ -38,12 +48,25 @@ config();
       DishEntity,
     ]),
   ],
-  controllers: [AppController, AccountController],
+  controllers: [
+    AccountController,
+    RegionController,
+    CityController,
+    DishController,
+    TravelScheduleController,
+  ],
   providers: [
-    AppService,
     AccountService,
+    RegionService,
+    CityService,
+    DishService,
+    TravelScheduleService,
 
     UserRepo,
+    RegionRepo,
+    CityRepo,
+    DishRepo,
+    TravelScheduleRepo,
 
     JwtStrategy,
     LocalStrategy,
