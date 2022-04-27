@@ -13,4 +13,9 @@ export class CityRepo {
   public async findAll(): Promise<CityEntity[]> {
     return this.repo.find();
   }
+
+  public async save(city: CityEntity): Promise<CityEntity> {
+    await this.repo.save(city);
+    return city;
+  }
 }
