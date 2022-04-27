@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryColumn, ManyToMany } from 'typeorm';
 import { Dish } from '../types';
 import { RegionEntity } from './region.entity';
 
-@Entity({ name: 'regions' })
+@Entity({ name: 'dishes' })
 export class DishEntity implements Dish {
   @PrimaryColumn({ type: 'uuid' })
   id!: string;

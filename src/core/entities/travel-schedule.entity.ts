@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryColumn } from 'typeorm';
 import { TravelSchedule, TransportType } from '../types';
 
-@Entity({ name: 'regions' })
+@Entity({ name: 'travel-schedules' })
 export class TravelScheduleEntity implements TravelSchedule {
   @PrimaryColumn({ type: 'uuid' })
   id!: string;

@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm';
 import { Sightseeing, City } from '../types';
 import { RegionEntity } from './region.entity';
 
-@Entity({ name: 'regions' })
+@Entity({ name: 'cities' })
 export class CityEntity implements City {
   @PrimaryColumn({ type: 'uuid' })
   id!: string;
