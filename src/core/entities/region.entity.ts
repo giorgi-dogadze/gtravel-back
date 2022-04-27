@@ -5,6 +5,8 @@ import {
   JoinTable,
   ManyToMany,
   OneToMany,
+  JoinColumn,
+  OneToOne,
 } from 'typeorm';
 import { Region, City } from '../types';
 import { CityEntity } from './city.entity';
@@ -29,7 +31,8 @@ export class RegionEntity implements Region {
   })
   area!: number; //in sq km
 
-  @Column({ type: 'jsonb', name: 'region_center' })
+  @OneToOne(() => CityEntity, (city) => city.regionCenter) // specify inverse side as a second parameter
+  @JoinColumn({ name: 'region_center' })
   regionCenter!: City;
 
   @Column({

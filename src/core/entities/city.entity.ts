@@ -1,5 +1,12 @@
-import { Entity, Column, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm';
-import { Sightseeing, City } from '../types';
+import {
+  Entity,
+  Column,
+  PrimaryColumn,
+  ManyToOne,
+  JoinColumn,
+  OneToOne,
+} from 'typeorm';
+import { Sightseeing, City, User } from '../types';
 import { RegionEntity } from './region.entity';
 
 @Entity({ name: 'cities' })
@@ -49,6 +56,9 @@ export class CityEntity implements City {
   @ManyToOne(() => RegionEntity, (region) => region.cities)
   @JoinColumn({ name: 'region_id' })
   region!: RegionEntity;
+
+  @OneToOne(() => RegionEntity, (region) => region.regionCenter) // specify inverse side as a second parameter
+  regionCenter: User;
 
   @Column({ type: 'timestamp', name: 'created_at' })
   createdAt!: string;
