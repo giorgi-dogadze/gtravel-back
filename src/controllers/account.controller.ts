@@ -11,7 +11,7 @@ import { AccountService } from 'src/services/account.service';
 
 @Controller()
 export class AccountController {
-  constructor(private readonly service: AccountService) {}
+  constructor(private service: AccountService) {}
 
   @UseGuards(JwtAuthGuard)
   @Get('/account/auth/me')

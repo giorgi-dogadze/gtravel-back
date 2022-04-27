@@ -4,7 +4,7 @@ import { CityService } from 'src/services/city.service';
 
 @Controller()
 export class CityController {
-  constructor(private readonly service: CityService) {}
+  constructor(private service: CityService) {}
 
   @Get('/cities')
   async findAll(): Promise<ResultList<City>> {

@@ -4,7 +4,7 @@ import { DishService } from 'src/services/dish.service';
 
 @Controller()
 export class DishController {
-  constructor(private readonly service: DishService) {}
+  constructor(private service: DishService) {}
 
   @Get('/dishes')
   async findAll(): Promise<ResultList<Dish>> {
