@@ -13,4 +13,11 @@ export class TravelScheduleRepo {
   public async findAll(): Promise<TravelScheduleEntity[]> {
     return this.repo.find();
   }
+
+  public async save(
+    travelSchedule: TravelScheduleEntity,
+  ): Promise<TravelScheduleEntity> {
+    await this.repo.save(travelSchedule);
+    return travelSchedule;
+  }
 }
