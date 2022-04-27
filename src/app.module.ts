@@ -23,6 +23,7 @@ import { CityService } from './services/city.service';
 import { DishService } from './services/dish.service';
 import { RegionService } from './services/region.service';
 import { TravelScheduleService } from './services/travel-schedule.service';
+import { NukeService } from './services/nuke.service';
 
 config();
 
@@ -61,6 +62,7 @@ config();
     CityService,
     DishService,
     TravelScheduleService,
+    NukeService,
 
     UserRepo,
     RegionRepo,
