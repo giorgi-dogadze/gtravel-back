@@ -73,3 +73,8 @@ export enum TransportType {
   Bus = 'Bus',
   Airplane = 'Airplane',
 }
+
+export interface ResultList<T> {
+  items: T[];
+  count: number;
+}
