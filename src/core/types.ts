@@ -10,3 +10,66 @@ export interface User {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface Region {
+  id: string;
+  slug: string;
+  name: string;
+  area: number;
+  regionCenter: City;
+  population: number;
+  populationDensity: number;
+  history: string;
+  cuisine: string;
+  description: string;
+  cities: City[];
+  dishes: Dish[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface City {
+  id: string;
+  slug: string;
+  name: string;
+  area: number;
+  population: number;
+  populationDensity: number;
+  description: string;
+  sightseeing: Sightseeing;
+  history: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface TravelSchedule {
+  id: string;
+  slug: string;
+  type: TransportType;
+  workDays: string;
+  workYours: string;
+  ticketPrice: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Dish {
+  id: string;
+  slug: string;
+  name: string;
+  composition: string;
+  history: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Sightseeing {
+  description: string;
+  imageUrl: string;
+}
+
+export enum TransportType {
+  Train = 'Train',
+  Bus = 'Bus',
+  Airplane = 'Airplane',
+}
