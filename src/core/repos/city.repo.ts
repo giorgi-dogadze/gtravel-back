@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CityEntity } from '../entities/city.entity';
 
+const relations = ['regionCenter'];
 @Injectable()
 export class CityRepo {
   constructor(
@@ -11,7 +12,7 @@ export class CityRepo {
   ) {}
 
   public async findAll(): Promise<CityEntity[]> {
-    return this.repo.find();
+    return this.repo.find({ relations });
   }
 
   public async save(city: CityEntity): Promise<CityEntity> {
