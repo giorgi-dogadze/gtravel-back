@@ -24,7 +24,7 @@ export class HotelEntity implements Hotel {
   @Column({ type: 'varchar', name: 'address' })
   address!: string;
 
-  @Column({ type: 'uuid', name: 'image_url', array: true })
+  @Column({ type: 'varchar', name: 'image_url', array: true })
   imageUrl!: string[];
 
   @Column({
