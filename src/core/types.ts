@@ -38,6 +38,8 @@ export interface City {
   description: string;
   sightseeing: Sightseeing;
   history: string;
+  restaurants: Restaurant[];
+  hotels: Hotel[];
   createdAt: string;
   updatedAt: string;
 }
@@ -59,6 +61,29 @@ export interface Dish {
   name: string;
   composition: string;
   history: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Restaurant {
+  id: string;
+  slug: string;
+  name: string;
+  rating: number;
+  address: string;
+  imageUrl: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Hotel {
+  id: string;
+  slug: string;
+  name: string;
+  rating: number;
+  address: string;
+  imageUrl: string[];
+  price: number | null;
   createdAt: string;
   updatedAt: string;
 }
