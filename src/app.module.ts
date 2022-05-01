@@ -26,6 +26,12 @@ import { TravelScheduleService } from './services/travel-schedule.service';
 import { NukeService } from './services/nuke.service';
 import { HotelEntity } from './core/entities/hotel.entity';
 import { RestaurantEntity } from './core/entities/restaurant.entity';
+import { HotelController } from './controllers/hotel.controller';
+import { RestaurantController } from './controllers/restaurant.controller';
+import { HotelRepo } from './core/repos/hotel.repo';
+import { RestaurantRepo } from './core/repos/restaurant.repo';
+import { HotelService } from './services/hotel.service';
+import { RestaurantService } from './services/restaurant.service';
 
 config();
 
@@ -59,6 +65,8 @@ config();
     CityController,
     DishController,
     TravelScheduleController,
+    HotelController,
+    RestaurantController,
   ],
   providers: [
     AccountService,
@@ -67,12 +75,16 @@ config();
     DishService,
     TravelScheduleService,
     NukeService,
+    HotelService,
+    RestaurantService,
 
     UserRepo,
     RegionRepo,
     CityRepo,
     DishRepo,
     TravelScheduleRepo,
+    HotelRepo,
+    RestaurantRepo,
 
     JwtStrategy,
     LocalStrategy,
