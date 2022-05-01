@@ -20,4 +20,12 @@ export class TravelScheduleRepo {
     await this.repo.save(travelSchedule);
     return travelSchedule;
   }
+
+  public async findBySlug(
+    slug: string,
+  ): Promise<TravelScheduleEntity | undefined> {
+    return this.repo.findOne({
+      where: { slug },
+    });
+  }
 }
