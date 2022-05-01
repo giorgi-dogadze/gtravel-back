@@ -72,6 +72,7 @@ export interface Restaurant {
   rating: number;
   address: string;
   imageUrl: string[];
+  description: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -84,6 +85,7 @@ export interface Hotel {
   address: string;
   imageUrl: string[];
   price: number | null;
+  description: string;
   createdAt: string;
   updatedAt: string;
 }

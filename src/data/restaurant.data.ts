@@ -14,6 +14,7 @@ export const gazafxuli: Restaurant = {
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
   ],
+  description: 'nice place',
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -29,6 +30,7 @@ export const kalauri: Restaurant = {
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
   ],
+  description: 'nice place',
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -44,6 +46,7 @@ export const darkvetis: Restaurant = {
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
   ],
+  description: 'nice place',
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };

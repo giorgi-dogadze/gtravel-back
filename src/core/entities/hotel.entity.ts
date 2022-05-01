@@ -36,6 +36,9 @@ export class HotelEntity implements Hotel {
   })
   price!: number | null;
 
+  @Column({ type: 'varchar', name: 'description', array: true })
+  description: string;
+
   @ManyToOne(() => CityEntity, (city) => city.hotels)
   @JoinColumn({ name: 'city_id' })
   city!: CityEntity;
