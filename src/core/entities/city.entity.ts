@@ -5,9 +5,12 @@ import {
   ManyToOne,
   JoinColumn,
   OneToOne,
+  OneToMany,
 } from 'typeorm';
 import { Sightseeing, City, User } from '../types';
+import { HotelEntity } from './hotel.entity';
 import { RegionEntity } from './region.entity';
+import { RestaurantEntity } from './restaurant.entity';
 
 @Entity({ name: 'cities' })
 export class CityEntity implements City {
@@ -56,6 +59,12 @@ export class CityEntity implements City {
   @ManyToOne(() => RegionEntity, (region) => region.cities)
   @JoinColumn({ name: 'region_id' })
   region!: RegionEntity;
+
+  @OneToMany(() => HotelEntity, (hotel) => hotel.city)
+  hotels!: HotelEntity[];
+
+  @OneToMany(() => RestaurantEntity, (restaurant) => restaurant.city)
+  restaurants!: RestaurantEntity[];
 
   @OneToOne(() => RegionEntity, (region) => region.regionCenter) // specify inverse side as a second parameter
   regionCenter: User;
