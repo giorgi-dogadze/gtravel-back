@@ -42,6 +42,24 @@ yarn build
 yarn typeorm schema:sync
 ```
 
+4. Add data to database
+
+```bash
+yarn nuke
+```
+
+P.S you can diff databases between local entities and postgres with
+
+```bash
+yarn typeorm schema:log
+```
+
+and you can drop database with
+
+```bash
+yarn typeorm schema:drop
+```
+
 <!-- TODO: add dummy data initialized instruction -->
 
 ## Getting Started
