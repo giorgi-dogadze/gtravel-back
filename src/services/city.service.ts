@@ -1,6 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { CityEntity } from 'src/core/entities/city.entity';
 import { CityRepo } from 'src/core/repos/city.repo';
 import { City, ResultList } from 'src/core/types';
+import { CitySlugParam } from 'src/messages/city.messaage';
 
 @Injectable()
 export class CityService {
@@ -10,5 +12,15 @@ export class CityService {
     const cities = await this.repo.findAll();
 
     return { items: cities, count: cities.length };
+  }
+
+  async readBySlug(props: CitySlugParam): Promise<CityEntity> {
+    const city = await this.repo.findBySlug(props.citySlug);
+
+    if (city == null) {
+      throw new NotFoundException(`City ${props.citySlug} not found`);
+    }
+
+    return city;
   }
 }
