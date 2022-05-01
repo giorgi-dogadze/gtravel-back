@@ -7,6 +7,10 @@ import { CityEntity } from 'src/core/entities/city.entity';
 import { DishEntity } from 'src/core/entities/dish.entity';
 import { TravelScheduleEntity } from 'src/core/entities/travel-schedule.entity';
 import { cities, dishes, regions } from 'src/data';
+import { HotelEntity } from 'src/core/entities/hotel.entity';
+import { RestaurantEntity } from 'src/core/entities/restaurant.entity';
+import { hotels } from 'src/data/hotel.data';
+import { restaurants } from 'src/data/restaurant.data';
 
 @Injectable()
 export class NukeService {
@@ -25,6 +29,12 @@ export class NukeService {
 
     @InjectRepository(RegionEntity)
     private regionRepo: Repository<RegionEntity>,
+
+    @InjectRepository(HotelEntity)
+    private hotelRepo: Repository<HotelEntity>,
+
+    @InjectRepository(RestaurantEntity)
+    private restaurantRepo: Repository<RestaurantEntity>,
   ) {}
 
   public async nuke(): Promise<string> {
@@ -38,12 +48,16 @@ export class NukeService {
     await this.dishRepo.query('TRUNCATE TABLE dishes CASCADE');
     await this.cityRepo.query('TRUNCATE TABLE cities CASCADE');
     await this.regionRepo.query('TRUNCATE TABLE regions CASCADE');
+    await this.hotelRepo.query('TRUNCATE TABLE hotels CASCADE');
+    await this.restaurantRepo.query('TRUNCATE TABLE restaurants CASCADE');
 
     // await this.userRepo.save(fields);
     // await this.travelScheduleRepo.save(categories);
 
     await this.dishRepo.save(dishes);
     await this.cityRepo.save(cities);
+    await this.hotelRepo.save(hotels);
+    await this.restaurantRepo.save(restaurants);
 
     await this.regionRepo.save(regions);
 
