@@ -18,4 +18,10 @@ export class DishRepo {
     await this.repo.save(dish);
     return dish;
   }
+
+  public async findBySlug(slug: string): Promise<DishEntity | undefined> {
+    return this.repo.findOne({
+      where: { slug },
+    });
+  }
 }

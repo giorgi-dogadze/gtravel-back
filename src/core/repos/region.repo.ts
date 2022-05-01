@@ -20,4 +20,11 @@ export class RegionRepo {
     await this.repo.save(region);
     return region;
   }
+
+  public async findBySlug(slug: string): Promise<RegionEntity | undefined> {
+    return this.repo.findOne({
+      relations,
+      where: { slug },
+    });
+  }
 }

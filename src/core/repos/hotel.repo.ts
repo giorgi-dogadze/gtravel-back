@@ -18,4 +18,10 @@ export class HotelRepo {
     await this.repo.save(hotel);
     return hotel;
   }
+
+  public async findBySlug(slug: string): Promise<HotelEntity | undefined> {
+    return this.repo.findOne({
+      where: { slug },
+    });
+  }
 }

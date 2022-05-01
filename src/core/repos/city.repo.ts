@@ -19,4 +19,11 @@ export class CityRepo {
     await this.repo.save(city);
     return city;
   }
+
+  public async findBySlug(slug: string): Promise<CityEntity | undefined> {
+    return this.repo.findOne({
+      relations,
+      where: { slug },
+    });
+  }
 }
