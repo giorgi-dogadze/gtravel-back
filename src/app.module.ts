@@ -24,6 +24,8 @@ import { DishService } from './services/dish.service';
 import { RegionService } from './services/region.service';
 import { TravelScheduleService } from './services/travel-schedule.service';
 import { NukeService } from './services/nuke.service';
+import { HotelEntity } from './core/entities/hotel.entity';
+import { RestaurantEntity } from './core/entities/restaurant.entity';
 
 config();
 
@@ -47,6 +49,8 @@ config();
       CityEntity,
       TravelScheduleEntity,
       DishEntity,
+      HotelEntity,
+      RestaurantEntity,
     ]),
   ],
   controllers: [
