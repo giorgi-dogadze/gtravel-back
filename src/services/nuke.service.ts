@@ -55,9 +55,10 @@ export class NukeService {
     // await this.travelScheduleRepo.save(categories);
 
     await this.dishRepo.save(dishes);
-    await this.cityRepo.save(cities);
     await this.hotelRepo.save(hotels);
     await this.restaurantRepo.save(restaurants);
+
+    await this.cityRepo.save(cities);
 
     await this.regionRepo.save(regions);
 
