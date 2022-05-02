@@ -30,7 +30,7 @@ yarn
 docker-compose up -d
 ```
 
-2. Build temi cloud back project.
+2. Build GTravel back project.
 
 ```bash
 yarn build
