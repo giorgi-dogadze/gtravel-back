@@ -30,7 +30,7 @@ yarn
 docker-compose up -d
 ```
 
-2. Build temi cloud back project.
+2. Build GTravel back project.
 
 ```bash
 yarn build
@@ -64,7 +64,7 @@ yarn typeorm schema:drop
 
 ## Getting Started
 
-run temi cloud back project
+run GTravel back project
 
 ```bash
 yarn start:dev
