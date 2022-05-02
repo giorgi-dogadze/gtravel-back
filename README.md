@@ -64,7 +64,7 @@ yarn typeorm schema:drop
 
 ## Getting Started
 
-run temi cloud back project
+run GTravel back project
 
 ```bash
 yarn start:dev
