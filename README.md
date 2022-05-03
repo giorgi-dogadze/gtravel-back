@@ -60,8 +60,6 @@ and you can drop database with
 yarn typeorm schema:drop
 ```
 
-<!-- TODO: add dummy data initialized instruction -->
-
 ## Getting Started
 
 run GTravel back project
