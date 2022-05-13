@@ -48,7 +48,23 @@ yarn typeorm schema:sync
 yarn nuke
 ```
 
-P.S you can diff databases between local entities and postgres with
+## Connect Docker Container to DataGrip
+
+1. Add new database and select PostgreSql in Data Source.
+
+2. Insert 35000 port instead of default 5432
+
+3. Insert Correct User and Password
+
+4. Click on apply
+
+```bash
+docker-compose up -d
+```
+
+P.S choose to see All Databases in database properties
+
+## Database tricks
 
 ```bash
 yarn typeorm schema:log
