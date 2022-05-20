@@ -11,7 +11,6 @@ export const imeruliKhachapuri: Dish = {
   slug: slugify('imeruli khachapuri'),
   name: 'imeruli khachapuri',
   composition: 'იმერული ყველი და ცომი',
-  history: 'ვალერიან დოღაძემ გამოიგონა',
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -21,7 +20,6 @@ export const imeruliLobiani: Dish = {
   slug: slugify('imeruli lobiani'),
   name: 'imeruli lobiani',
   composition: 'იმერული ლობიო და ცომი',
-  history: 'ვალერიან დოღაძემ გამოიგონა',
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };

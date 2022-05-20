@@ -16,9 +16,6 @@ export class DishEntity implements Dish {
   @Column({ type: 'varchar', name: 'composition' })
   composition!: string;
 
-  @Column({ type: 'varchar', name: 'history' })
-  history!: string;
-
   @ManyToMany(() => RegionEntity, (region) => region.dishes)
   regions!: RegionEntity[];
 

@@ -60,7 +60,6 @@ export interface Dish {
   slug: string;
   name: string;
   composition: string;
-  history: string;
   createdAt: string;
   updatedAt: string;
 }
