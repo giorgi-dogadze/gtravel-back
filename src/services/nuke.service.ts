@@ -6,7 +6,7 @@ import { RegionEntity } from 'src/core/entities/region.entity';
 import { CityEntity } from 'src/core/entities/city.entity';
 import { DishEntity } from 'src/core/entities/dish.entity';
 import { TravelScheduleEntity } from 'src/core/entities/travel-schedule.entity';
-import { cities, dishes, regions } from 'src/data';
+import { cities, dishes, regions, travelSchedules } from 'src/data';
 import { HotelEntity } from 'src/core/entities/hotel.entity';
 import { RestaurantEntity } from 'src/core/entities/restaurant.entity';
 import { hotels } from 'src/data/hotel.data';
@@ -50,10 +50,12 @@ export class NukeService {
     await this.regionRepo.query('TRUNCATE TABLE regions CASCADE');
     await this.hotelRepo.query('TRUNCATE TABLE hotels CASCADE');
     await this.restaurantRepo.query('TRUNCATE TABLE restaurants CASCADE');
-
+    await this.travelScheduleRepo.query(
+      'TRUNCATE TABLE travel_schedules CASCADE',
+    );
     // await this.userRepo.save(fields);
-    // await this.travelScheduleRepo.save(categories);
 
+    await this.travelScheduleRepo.save(travelSchedules);
     await this.dishRepo.save(dishes);
     await this.hotelRepo.save(hotels);
     await this.restaurantRepo.save(restaurants);
