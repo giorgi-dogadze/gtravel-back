@@ -48,9 +48,13 @@ export interface TravelSchedule {
   id: string;
   slug: string;
   type: TransportType;
+  startDestination: string;
+  endDestination: string;
+  address: string;
   workDays: string;
   workYours: string;
   ticketPrice: number;
+  description: string;
   createdAt: string;
   updatedAt: string;
 }

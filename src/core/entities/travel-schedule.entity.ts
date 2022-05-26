@@ -12,6 +12,15 @@ export class TravelScheduleEntity implements TravelSchedule {
   @Column({ type: 'varchar', name: 'type' })
   type!: TransportType;
 
+  @Column({ type: 'varchar', name: 'startDestination' })
+  startDestination!: string;
+
+  @Column({ type: 'varchar', name: 'endDestination' })
+  endDestination!: string;
+
+  @Column({ type: 'varchar', name: 'address' })
+  address!: string;
+
   @Column({ type: 'varchar', name: 'workDays' })
   workDays!: string;
 
@@ -25,6 +34,9 @@ export class TravelScheduleEntity implements TravelSchedule {
     name: 'ticketPrice',
   })
   ticketPrice!: number;
+
+  @Column({ type: 'varchar', name: 'description' })
+  description!: string;
 
   @Column({ type: 'timestamp', name: 'created_at' })
   createdAt!: string;
