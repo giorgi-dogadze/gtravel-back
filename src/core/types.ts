@@ -64,6 +64,7 @@ export interface Dish {
   slug: string;
   name: string;
   composition: string;
+  imageUrl: string;
   createdAt: string;
   updatedAt: string;
 }
