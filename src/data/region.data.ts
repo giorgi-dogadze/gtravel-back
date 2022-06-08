@@ -2,7 +2,7 @@ import { Region } from 'src/core/types';
 import { slugify } from 'src/core/utils';
 import { v4 as uuid } from 'uuid';
 import { formatISO } from 'date-fns';
-import { chiatura, sachkhere, qutaisi } from './city.data';
+import { chiatura, qutaisi } from './city.data';
 import { imeruliKhachapuri, imeruliLobiani } from './dish.data';
 
 export const imeretiId = uuid();
@@ -18,7 +18,7 @@ export const imereti: Region = {
   history: 'დაარსა აკაკიმ 1879წელს',
   cuisine: 'ყველაფერი კარგი',
   description: 'დიდებული კუთხე',
-  cities: [chiatura, sachkhere, qutaisi],
+  cities: [chiatura, qutaisi],
   dishes: [imeruliKhachapuri, imeruliLobiani],
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
