@@ -1,7 +1,10 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { TravelScheduleEntity } from 'src/core/entities/travel-schedule.entity';
 import { ResultList, TravelSchedule } from 'src/core/types';
-import { TravelScheduleSlugParam } from 'src/messages/travel-schedule.message';
+import {
+  TravelScheduleDestinationParam,
+  TravelScheduleSlugParam,
+} from 'src/messages/travel-schedule.message';
 import { TravelScheduleService } from 'src/services/travel-schedule.service';
 
 @Controller()
@@ -22,5 +25,14 @@ export class TravelScheduleController {
     const travelSchedule = await this.service.readBySlug(param);
 
     return travelSchedule;
+  }
+
+  @Get('/travel-schedules/start/:startDestination/end/:endDestination')
+  async readByDestination(
+    @Param() param: TravelScheduleDestinationParam,
+  ): Promise<ResultList<TravelSchedule>> {
+    const resultList = await this.service.readByDestination(param);
+
+    return resultList;
   }
 }
