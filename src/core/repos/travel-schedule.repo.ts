@@ -28,4 +28,13 @@ export class TravelScheduleRepo {
       where: { slug },
     });
   }
+
+  public async readByDestination(
+    startDestination: string,
+    endDestination: string,
+  ): Promise<TravelScheduleEntity[] | undefined> {
+    return this.repo.find({
+      where: { startDestination, endDestination },
+    });
+  }
 }
