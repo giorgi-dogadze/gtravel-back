@@ -6,3 +6,13 @@ export class TravelScheduleSlugParam {
   @IsString()
   travelScheduleSlug!: string;
 }
+
+export class TravelScheduleDestinationParam {
+  @ApiProperty()
+  @IsString()
+  startDestination!: string;
+
+  @ApiProperty()
+  @IsString()
+  endDestination!: string;
+}
