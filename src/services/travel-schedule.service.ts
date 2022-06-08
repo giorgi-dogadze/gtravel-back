@@ -2,7 +2,10 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { TravelScheduleEntity } from 'src/core/entities/travel-schedule.entity';
 import { TravelScheduleRepo } from 'src/core/repos/travel-schedule.repo';
 import { TravelSchedule, ResultList } from 'src/core/types';
-import { TravelScheduleSlugParam } from 'src/messages/travel-schedule.message';
+import {
+  TravelScheduleDestinationParam,
+  TravelScheduleSlugParam,
+} from 'src/messages/travel-schedule.message';
 
 @Injectable()
 export class TravelScheduleService {
@@ -26,5 +29,22 @@ export class TravelScheduleService {
     }
 
     return travelSchedule;
+  }
+
+  async readByDestination(
+    props: TravelScheduleDestinationParam,
+  ): Promise<ResultList<TravelSchedule>> {
+    const travelSchedule = await this.repo.readByDestination(
+      props.startDestination,
+      props.endDestination,
+    );
+
+    if (travelSchedule == null) {
+      throw new NotFoundException(
+        `TravelSchedule with startDestination: ${props.startDestination} and endDestination: ${props.endDestination}not found`,
+      );
+    }
+
+    return { items: travelSchedule, count: travelSchedule.length };
   }
 }
