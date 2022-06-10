@@ -25,8 +25,8 @@ export class RegionEntity implements Region {
 
   @Column({
     type: 'decimal',
-    precision: 7,
-    scale: 1,
+    precision: 12,
+    scale: 2,
     name: 'area',
   })
   area!: number; //in sq km
@@ -37,16 +37,16 @@ export class RegionEntity implements Region {
 
   @Column({
     type: 'decimal',
-    precision: 7,
-    scale: 1,
+    precision: 12,
+    scale: 2,
     name: 'population',
   })
   population!: number;
 
   @Column({
     type: 'decimal',
-    precision: 7,
-    scale: 1,
+    precision: 12,
+    scale: 2,
     name: 'populationDensity',
   })
   populationDensity!: number;
