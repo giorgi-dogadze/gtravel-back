@@ -744,6 +744,24 @@ export const RustaviHotel: Hotel = {
   updatedAt: formatISO(new Date()),
 };
 
+export const  Laerton: Hotel = {
+  id: uuid(),
+  slug: slugify(' Laerton'),
+  name: ' Laerton',
+  rating: 8.2,
+  address: '14 Iliko Kurkhuli street, Tbilisi City Center, Tbilisi, Georgia',
+  imageUrl: [
+    'https://pix8.agoda.net/hotelImages/889/889419/889419_17051518140052999199.jpg?ca=13&ce=1&s=1024x',
+    'https://pix8.agoda.net/hotelImages/889/889419/889419_17051518510052999859.jpg?ca=6&ce=1&s=1024x',
+    'https://pix8.agoda.net/hotelImages/889/889419/889419_17051518510052999858.jpg?ca=6&ce=1&s=1024x',
+  ],
+  description: 'მშვენივრად დაიწყებთ თქვენი მოგზაურობა ამ სასტუმროში ყოფნით, რომელიც გთავაზობთ უფასო Wi-Fi-ს ყველა ოთახში. სასტუმრო მდებარეობს თბილისის ცენტრში',
+  price: Math.random() * 5,
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
+
+
 export const hotels: Hotel[] = [
   RustaviHotel,
   ChateauKvirike,

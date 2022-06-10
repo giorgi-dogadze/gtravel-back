@@ -708,7 +708,24 @@ export const RestaurantSamepo: Restaurant = {
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
+
+export const TiflisiVeranda: Restaurant = {
+  id: uuid(),
+  slug: slugify('TiflisiVeranda'),
+  name: 'TiflisiVeranda',
+  rating: 8.5,
+  address: 'Tbilisi, gorgiladzis q.3',
+  imageUrl: [
+    'https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/129265893_993358324524288_6532595478708179651_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AxvyRPeLXyIAX-KVOTt&_nc_ht=scontent.ftbs10-1.fna&oh=00_AT8_UO9iIG9EAnM-HyUuifpuPHAKIBvIOLuMBaUZ2D97Sg&oe=62BE6852',
+    'https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/128727664_992666357926818_3789361899549431409_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bpd1redx8iMAX_5qGwp&_nc_ht=scontent.ftbs10-1.fna&oh=00_AT9GeIYIMhxshwOy1Eb0FsW3mHgPHHvarLi0dLkn-ZOYSQ&oe=62BDE5DF',
+    'https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/126504875_985197405340380_6638975202035599913_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NPR335bPyfwAX-D1E5h&_nc_ht=scontent.ftbs10-1.fna&oh=00_AT9yrEIdJRtbvqGn2NuwkvCbeexnPGrABYNEOaIKDaIBxA&oe=62BDE84F',
+  ],
+  description: 'სამზარეულო: ევროპული, ქართული. საშუალო ღირებულება: 80 ლარზე მეტი .სერვისები:გადახდა პლასტიკური ბარათებით,wi-fi,ადგილზე მიტანა,ლანჩი',
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
 export const restaurants: Restaurant[] = [
+  TiflisiVeranda,
   QebuliKobuleti,
   BegheliKhulo,
   TamarisKhidi,
