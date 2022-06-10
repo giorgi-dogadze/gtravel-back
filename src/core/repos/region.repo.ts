@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { RegionEntity } from '../entities/region.entity';
 
-const relations = ['cities', 'dishes', 'regionCenter'];
+const relations = ['cities', 'dishes', 'regionCenter', "city.hotels", "city.restaurants"];
 
 @Injectable()
 export class RegionRepo {
