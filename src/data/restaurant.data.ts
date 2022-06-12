@@ -9,7 +9,7 @@ export const  QebuliKobuleti: Restaurant = {
   id: uuid(),
   slug: slugify(' QebuliKobuleti'),
   name: ' Qebuli-Kobuleti',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Village Kobuleti, Kobuleti 6200 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/12/42/d4/61/2018.jpg',
@@ -25,7 +25,7 @@ export const BegheliKhulo: Restaurant = {
   id: uuid(),
   slug: slugify('BegheliKhulo'),
   name: 'Begheli Khulo',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: '3 Aghmashenebeli Street, Khulo, Adjara, Georgia',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/original/308_508008295.jpg',
@@ -41,7 +41,7 @@ export const TamarisKhidi: Restaurant = {
   id: uuid(),
   slug: slugify('TamarisKhidi'),
   name: 'Tamaris Khidi',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'keda,kedis raino sofeli kveda makhunceti',
   imageUrl: [
     'http://tifa.ge/images/restotani/Restaurant-Tamar-Bridge/14458012040_3-.jpg',
@@ -57,7 +57,7 @@ export const  Shuakhevi: Restaurant = {
   id: uuid(),
   slug: slugify(' Shuakhevi'),
   name: ' Shuakhevi',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Shuakhevi, Adjara, Georgia',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/original/103_510328908.jpg',
@@ -73,7 +73,7 @@ export const Riviera: Restaurant = {
   id: uuid(),
   slug: slugify('Riviera'),
   name: 'Riviera',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'tamar mefis gamziri',
   imageUrl: [
     'https://www.infobatumi.ge/wp-content/uploads/2021/06/Riviera-2021-5-INFOBATUMI.GE_.jpg',
@@ -89,7 +89,7 @@ export const Gulrifshi: Restaurant = {
   id: uuid(),
   slug: slugify('Gulrifshi'),
   name: 'Gulrifshi',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Gulrifshi,georgia',
   imageUrl: [
     'https://kutaisi.travel/files/restaurants/%E1%83%90%E1%83%A0%E1%83%92%E1%83%9D/5.jpg',
@@ -105,7 +105,7 @@ export const Ochamchire: Restaurant = {
   id: uuid(),
   slug: slugify('ochamchire'),
   name: 'ochamchire',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'ochamchire,georgia',
   imageUrl: [
     'https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/129265893_993358324524288_6532595478708179651_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AxvyRPeLXyIAX-KVOTt&_nc_ht=scontent.ftbs10-1.fna&oh=00_AT8_UO9iIG9EAnM-HyUuifpuPHAKIBvIOLuMBaUZ2D97Sg&oe=62BE6852',
@@ -121,7 +121,7 @@ export const Leonn: Restaurant = {
   id: uuid(),
   slug: slugify('Leon'),
   name: 'Leon',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Chitanava St. 6, Sukhumi  Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/19/a0/d5/a1/caption.jpg',
@@ -137,7 +137,7 @@ export const Veranda: Restaurant = {
   id: uuid(),
   slug: slugify('gazafxuli'),
   name: 'gazafxuli',
-  rating: 8.7,
+  rating: Math.round(Math.random() * 2 + 3),
   address: '9 Heroes Ave, Gudauta, Georgien',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/original/405_66342748.jpg',
@@ -153,7 +153,7 @@ export const Besedka: Restaurant = {
   id: uuid(),
   slug: slugify('Besedka'),
   name: 'Besedka',
-  rating: 8.8,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Vladislava Ardzinba Ave. 273, Gagra 6700 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/10/dd/d3/ae/caption.jpg',
@@ -171,7 +171,7 @@ export const Legend: Restaurant = {
   id: uuid(),
   slug: slugify('Legend'),
   name: 'Legend',
-  rating: 9.3,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'gali, georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/13/9c/df/23/caption.jpg',
@@ -188,7 +188,7 @@ export const TerracePub
   id: uuid(),
   slug: slugify('TerracePub'),
   name: 'Terrace Pub',
-  rating: 8.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Dolidze 9, chokhatauri 3500 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/15/96/e4/99/getlstd-property-photo.jpg',
@@ -204,7 +204,7 @@ export const GourmandSamtredia: Restaurant = {
   id: uuid(),
   slug: slugify('GourmandSamtredia'),
   name: 'Gourmand Samtredia',
-  rating: 8.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Tamar Mepe 17, samtredia 3900 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/1c/f0/a8/f3/restaurant-gourmand.jpg',
@@ -219,7 +219,7 @@ export const Megapolisi: Restaurant = {
   id: uuid(),
   slug: slugify('Megapolisi'),
   name: 'Megapolisi',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'abesadzis 54, Zestafoni, Iméréthie, Géorgie',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/small/w312/h280/344_341805832.jpg',
@@ -235,7 +235,7 @@ export const Tortiko: Restaurant = {
   id: uuid(),
   slug: slugify('Tortiko'),
   name: 'Tortiko',
-  rating: 9.8,
+  rating: Math.round(Math.random() * 2 + 3),
   address: '8 Respublikis street, Ozurgeti 3900 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/11/de/3c/c8/pastry-shop-tortiko-coffee.jpg',
@@ -251,7 +251,7 @@ export const Palaty: Restaurant = {
   id: uuid(),
   slug: slugify('Palaty'),
   name: 'Palaty',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Pushkin str. II lane # 1 Imereti, Kutaisi 4600 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/17/ee/ee/dc/street-view.jpg',
@@ -267,7 +267,7 @@ export const LunchAtLia: Restaurant = {
   id: uuid(),
   slug: slugify('LunchAtLia'),
   name: 'Lunch At Lia',
-  rating: 10,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Merab Kiladze Str. 7, Chiatura 5500 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/22/93/67/3f/caption.jpg',
@@ -283,7 +283,7 @@ export const Magnolia: Restaurant = {
   id: uuid(),
   slug: slugify('Magnolia'),
   name: 'Magnolia',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: '1 Zakaria Paliashvili Street, Tskaltubo, Imereti, Georgia',
   imageUrl: [
     'https://img.restaurantguru.com/ccc8-Magnolia-Tskaltubo-food.jpg',
@@ -299,7 +299,7 @@ export const KakhetiRestaurant: Restaurant = {
   id: uuid(),
   slug: slugify('KakhetiRestaurant'),
   name: 'Kakheti Restaurant',
-  rating: 8.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: '43, Akhmeta, Mtskheta-Mtianeti, Georgia',
   imageUrl: [
     'https://img.restaurantguru.com/cf86-Restaurant-Kakheti-Restaurant-photo.jpg',
@@ -315,7 +315,7 @@ export const KoKo: Restaurant = {
   id: uuid(),
   slug: slugify('KoKo'),
   name: 'Ko Ko',
-  rating: 8.0,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Gurjaani, Kakheti, Georgia',
   imageUrl: [
     'https://img.restaurantguru.com/c5ea-Restaurant-Ko-Ko-interior.jpg',
@@ -331,7 +331,7 @@ export const Kapiloni: Restaurant = {
   id: uuid(),
   slug: slugify('Kapiloni'),
   name: 'Kapiloni',
-  rating: 8.1,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Erekle St. 2, Telavi 2200 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/0f/9e/93/b6/getlstd-property-photo.jpg',
@@ -347,7 +347,7 @@ export const TheTerraceSignagi: Restaurant = {
   id: uuid(),
   slug: slugify('TheTerraceSignagi'),
   name: 'The Terrace Signagi',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Baratashvili str. 1-turn. #10, Signagi 4200 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/1b/55/78/58/best-view-over-the-city.jpg',
@@ -362,7 +362,7 @@ export const RoyalBatoni: Restaurant = {
   id: uuid(),
   slug: slugify('RoyalBatoni'),
   name: 'Royal Batoni',
-  rating: 3.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Hotel Royal Batoni, Kvareli Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/08/39/38/ac/caption.jpg',
@@ -378,7 +378,7 @@ export const Khvamli: Restaurant = {
   id: uuid(),
   slug: slugify('Khvamli'),
   name: 'Khvamli',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'tsageri,georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/1c/56/c1/10/didgori-winemaking.jpg',
@@ -394,7 +394,7 @@ export const Adacafe: Restaurant = {
   id: uuid(),
   slug: slugify('Adacafe'),
   name: 'Adacafe',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Sanapiro 5, Mtskheta 3300 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/1b/85/fb/48/garden-in-the-riverside.jpg',
@@ -410,7 +410,7 @@ export const Aragvi: Restaurant = {
   id: uuid(),
   slug: slugify('Aragvi'),
   name: 'Aragvi',
-  rating: 9.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Village Aragvispiri, Dusheti 1804 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/0f/84/67/c2/restaurant-aragvi-is.jpg',
@@ -425,7 +425,7 @@ export const Marani: Restaurant = {
   id: uuid(),
   slug: slugify('Marani'),
   name: 'Marani',
-  rating: 8.4,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Bolnisi, Kvemo Kartli, Georgia',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/small/w312/h280/109_509083397.jpg',
@@ -441,7 +441,7 @@ export const Dmanisi: Restaurant = {
   id: uuid(),
   slug: slugify('Dmanisi'),
   name: 'Dmanisi',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'dmanisi,georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/0f/a2/48/f0/mtsvadi-pork-barbeque.jpg',
@@ -457,7 +457,7 @@ export const khikhani: Restaurant = {
   id: uuid(),
   slug: slugify('khikhani'),
   name: 'khikhani',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Tsalka, Kvemo Kartli, Georgia',
   imageUrl: [
     'https://10619-2.s.cdn12.com/r2/w312/h280/khkhani-food.jpg',
@@ -473,7 +473,7 @@ export const Tsiskvili: Restaurant = {
   id: uuid(),
   slug: slugify('Tsiskvili'),
   name: 'Tsiskvili',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'oni,georgia',
   imageUrl: [
     'https://img.restaurantguru.com/c589-Restaurant-Tsiskvili-interior.jpg',
@@ -488,7 +488,7 @@ export const Metekhara: Restaurant = {
   id: uuid(),
   slug: slugify('Metekhara'),
   name: 'Metekhara',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Gamsakhurdia St. 2, Ambrolauri 0400 Georgia',
   imageUrl: [
     'https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg',
@@ -503,7 +503,7 @@ export const Dubli: Restaurant = {
   id: uuid(),
   slug: slugify('Dubli'),
   name: 'Dubli',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Tamarashvili St., 35, Akhaltsikhe Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/11/d5/08/a0/dubli.jpg',
@@ -519,7 +519,7 @@ export const Tourist: Restaurant = {
   id: uuid(),
   slug: slugify('Tourist'),
   name: 'Tourist',
-  rating: 8.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Nodar Dumbadze street 3, Borjomi 383720 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/18/9d/da/fe/photo4jpg.jpg',
@@ -535,7 +535,7 @@ export const  Diaroni: Restaurant = {
   id: uuid(),
   slug: slugify(' Diaroni'),
   name: ' Diaroni',
-  rating: 9.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Meunargia St. 9, Zugdidi 384700 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/10/21/56/9d/caption.jpg',
@@ -551,7 +551,7 @@ export const Oda: Restaurant = {
   id: uuid(),
   slug: slugify('ODA'),
   name: 'ODA',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Chavchavadze st. 1, Martivili 3100 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/10/06/9c/5f/getlstd-property-photo.jpg',
@@ -567,7 +567,7 @@ export const Efre: Restaurant = {
   id: uuid(),
   slug: slugify('Efre'),
   name: 'Efre',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'chkhorotsku,georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/13/29/d3/c0/host-restaurant-zugdidi.jpg',
@@ -583,7 +583,7 @@ export const Argo: Restaurant = {
   id: uuid(),
   slug: slugify('Argo'),
   name: 'Argo',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Sokhumi St. 130,tsalenjikha georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/0f/85/b7/51/restaurant-argo-in-zugdidi.jpg',
@@ -599,7 +599,7 @@ export const Kera: Restaurant = {
   id: uuid(),
   slug: slugify('Kera'),
   name: 'Kera',
-  rating: 8.4,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Moskov Street, 2, Gori Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/1e/9d/cf/ce/welcome2ke-ra-3.jpg',
@@ -615,7 +615,7 @@ export const Agurebshi: Restaurant = {
   id: uuid(),
   slug: slugify('Agurebshi'),
   name: 'Agurebshi',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'anton katalikos street, Kaspi, Shida Kartli, Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/18/93/f0/54/quiet-environment-for.jpg',
@@ -632,7 +632,7 @@ export const kareli: Restaurant = {
   id: uuid(),
   slug: slugify('kareli'),
   name: 'kareli',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'kareli ,georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-l/17/68/6b/bc/img-20190505-184154-largejpg.jpg',
@@ -648,7 +648,7 @@ export const MaxiBurger: Restaurant = {
   id: uuid(),
   slug: slugify('MaxiBurger'),
   name: 'Maxi Burger',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Tbilisi - Senaki - Leselidze Hwy., Khashuri 5704 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-p/17/db/cc/c1/chicken-burger-and-cold.jpg',
@@ -664,7 +664,7 @@ export const CafeLaila: Restaurant = {
   id: uuid(),
   slug: slugify('CafeLaila'),
   name: 'Cafe Laila',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Zugdidi Jvari Mestia Lasdili Seti square7, Mestia 384750 Georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/17/6c/7b/7b/cafe-laila-exterior.jpg',
@@ -679,7 +679,7 @@ export const Koshki: Restaurant = {
   id: uuid(),
   slug: slugify('Koshki'),
   name: 'Koshki',
-  rating: 7.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'lentekhi,georgia',
   imageUrl: [
     'https://media-cdn.tripadvisor.com/media/photo-s/14/09/10/06/img-20180807-142140268.jpg',
@@ -697,7 +697,7 @@ export const RestaurantSamepo: Restaurant = {
   id: uuid(),
   slug: slugify('RestaurantSamepo'),
   name: 'Restaurant Samepo',
-  rating: 8.2,
+  rating: Math.round(Math.random() * 2 + 3),
   address: ' Tsurtaveli 5, Rustavi, Georgia.',
   imageUrl: [
     'https://10619-2.s.cdn12.com/rests/original/105_505791511.jpg',
@@ -713,7 +713,7 @@ export const TiflisiVeranda: Restaurant = {
   id: uuid(),
   slug: slugify('TiflisiVeranda'),
   name: 'TiflisiVeranda',
-  rating: 8.5,
+  rating: Math.round(Math.random() * 2 + 3),
   address: 'Tbilisi, gorgiladzis q.3',
   imageUrl: [
     'https://scontent.ftbs10-1.fna.fbcdn.net/v/t1.6435-9/129265893_993358324524288_6532595478708179651_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=AxvyRPeLXyIAX-KVOTt&_nc_ht=scontent.ftbs10-1.fna&oh=00_AT8_UO9iIG9EAnM-HyUuifpuPHAKIBvIOLuMBaUZ2D97Sg&oe=62BE6852',
