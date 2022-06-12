@@ -358,7 +358,7 @@ export const chvishtari: Dish = {
     'სულგუნი - 200.00 გ',
   imageUrl: 'https://gemrielia.ge/media/images/chvishtari_BK5gjW5.jpg',
   rating: Math.round(Math.random() * 2 + 3),
-  ceatedAt: formatISO(new Date()),
+  createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
@@ -381,7 +381,7 @@ export const machyvinara: Dish = {
   composition: 'სოკო',
   imageUrl: '',
   rating: Math.round(Math.random() * 2 + 3),
-  ceatedAt: formatISO(new Date()),
+  createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
