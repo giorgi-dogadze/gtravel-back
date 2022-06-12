@@ -24,12 +24,11 @@ export class DishEntity implements Dish {
 
   @Column({
     type: 'decimal',
-    precision: 3,
-    scale: 2,
+    precision: 1,
     name: 'rating',
   })
   rating!: number;
-  
+
   @Column({ type: 'timestamp', name: 'created_at' })
   createdAt!: string;
 

@@ -14,8 +14,9 @@ export const ChateauKvirike: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/300736785.jpg?k=d60029a958a8249f15644aa0c76e3d0c28e7097f7982d3b0faae3f95b771460b&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/311246314.jpg?k=5fd7c3af75fde698050b283611d905a426d6580474403e30c8b6dc41bd258164&o=&hp=1',
   ],
-  description: 'სასტუმრო „შატო კვირიკე“ 6 ჰექტარზე გაშენებული დასასვენებელი კომპლექსია, რომელიც ზღვასა და მთას შორის თავის მდებარეობას უნიკალურს ხდის.',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'სასტუმრო „შატო კვირიკე“ 6 ჰექტარზე გაშენებული დასასვენებელი კომპლექსია, რომელიც ზღვასა და მთას შორის თავის მდებარეობას უნიკალურს ხდის.',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -31,12 +32,13 @@ export const AmbassadoriGoderdziHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/289012163.jpg?k=194b73ca70773d6c132a5136ec8b6d23f4d486f508c30fc1dfbfeee0006805dd&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/289004882.jpg?k=0b770dcf6fb1840b8d125712bbba55a8ecbc7027e47332b4c5db718cfaeea575&o=&hp=1',
   ],
-  description: ' გოდერძი იდეალურია ექსტრემალური შეგრძნებებისა და დაუვიწყარი გამოცდილებისთვის - სრიალი გაუკვალავში, ალპურ ზონაში, წიწვოვან ტყესა და სოფლებში',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    ' გოდერძი იდეალურია ექსტრემალური შეგრძნებებისა და დაუვიწყარი გამოცდილებისთვის - სრიალი გაუკვალავში, ალპურ ზონაში, წიწვოვან ტყესა და სოფლებში',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
-export const AjaraGlampingKokotauri : Hotel = {
+export const AjaraGlampingKokotauri: Hotel = {
   id: uuid(),
   slug: slugify('AjaraGlampingKokotauri '),
   name: 'Ajara Glamping Kokotauri ',
@@ -47,10 +49,10 @@ export const AjaraGlampingKokotauri : Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/361198948.jpg?k=96e0d8d54ccfe54224c5e438e098cc1a32bb06b86160113bcba29db12aadb786&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/361200639.jpg?k=64dcc6bfef167a9238fadd51c5a203fd307ba7c593c232e8d11145bd9b98e4d6&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/361199322.jpg?k=8aad65191d2a74957a079dbeecaf0ec9fc77a1515960e2ba35af75f1f8906b47&o=&hp=1',
-
   ],
-  description: 'ეს შესანიშნავი ადგილია დასასვენებლად, თუ გსურთ რომანტიული დასვენება ან ყველაფრისგან იზოლირებული იყოთ. ბუნება მშვენიერია, ხედი მშვენიერია და ადგილი საკმაოდ კომფორტულია',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'ეს შესანიშნავი ადგილია დასასვენებლად, თუ გსურთ რომანტიული დასვენება ან ყველაფრისგან იზოლირებული იყოთ. ბუნება მშვენიერია, ხედი მშვენიერია და ადგილი საკმაოდ კომფორტულია',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -65,12 +67,13 @@ export const Kejeradzeebi: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/348912262.jpg?k=534c2baaf633fa54918e58c6c76d21ab0d31dbc5ad29e5aef1e8fdf17fa0225f&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/348912274.jpg?k=cc5d83d21ec8f23fb352d0672c64c6a7e8d2be75347a62976c4f64f57438cc29&o=&hp=1',
   ],
-  description: 'სოფელი გარშემორტყმულია ულამაზესი მთებით. შესანიშნავი ვარიანტი ქალაქის ხმაურისგან დასვენებისთვის. მასპინძლები ძალიან სტუმართმოყვარეები არიან, ყველაფერს აკეთებენ  იმისთვის, რომ კომფორტული იყოს გარემო. ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'სოფელი გარშემორტყმულია ულამაზესი მთებით. შესანიშნავი ვარიანტი ქალაქის ხმაურისგან დასვენებისთვის. მასპინძლები ძალიან სტუმართმოყვარეები არიან, ყველაფერს აკეთებენ  იმისთვის, რომ კომფორტული იყოს გარემო. ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
-export const  Orbicityseaview: Hotel = {
+export const Orbicityseaview: Hotel = {
   id: uuid(),
   slug: slugify('Orbicityseaview'),
   name: 'Orbi city seaview',
@@ -81,8 +84,9 @@ export const  Orbicityseaview: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/346712865.jpg?k=f19e59a1adfda1b9d433c7003a54369d2c6e487e94d54e5e6ad9a553a79704c2&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/346709708.jpg?k=fe44e7c837ffe82c78bc522b65eeb2600f76ad762339e5a070954c36df004d53&o=&hp=1',
   ],
-  description: 'ადგილმდებარეობა საუკეთესოა, ხედი საოცარი, სუფთა და კომფორტული გარემოა. ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'ადგილმდებარეობა საუკეთესოა, ხედი საოცარი, სუფთა და კომფორტული გარემოა. ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -98,12 +102,12 @@ export const Leon: Hotel = {
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/f6/a6/41/photo8jpg.jpg?w=2200&h=-1&s=1',
   ],
   description: 'კარგი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
-export const AleksandriA : Hotel = {
+export const AleksandriA: Hotel = {
   id: uuid(),
   slug: slugify('AleksandriA'),
   name: 'AleksandriA ',
@@ -114,8 +118,9 @@ export const AleksandriA : Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/228729795.jpg?k=88fca284af485f0f525d2a17395294d4a70871f079866949e98dadc165244693&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/228729862.jpg?k=51925c23d1bd987faca0e862f970e2f06598702b39b9258c4b9fbe15dca141a9&o=&hp=1',
   ],
-  description: 'ძალიან სასიამოვნო გარემოა სადაც შეგიძლიათ მეგობრებთან და ოჯახთან ერთად ძალიან კარგი დრო გაატაროთ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'ძალიან სასიამოვნო გარემოა სადაც შეგიძლიათ მეგობრებთან და ოჯახთან ერთად ძალიან კარგი დრო გაატაროთ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -132,7 +137,7 @@ export const BoutiqueHotelAnana: Hotel = {
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/0d/34/9b/caption.jpg?w=1400&h=-1&s=1',
   ],
   description: 'ძალიან კარგი გარემოა სადაც გაატარებთ თქვენს საუკეთესო დღეებს',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -148,13 +153,14 @@ export const EcoPapaHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/264698272.jpg?k=0e43c3345ea2018c3e5c7da7bfc77b2c30e8e04bfbd8bdee09cba94ed2be566b&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/197516493.jpg?k=ba1a66a0008c20cd291c80025a045f4fee843aa9c8ba1b8f1cba9f297aba6a4a&o=&hp=1',
   ],
-  description: 'არის თბილი გარემო სადაც დაგხვდებათ ანიმატორები რომლებიც იზრუნებენ თქვენს განწყობაზე',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'არის თბილი გარემო სადაც დაგხვდებათ ანიმატორები რომლებიც იზრუნებენ თქვენს განწყობაზე',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
-export const  Abaata: Hotel = {
+export const Abaata: Hotel = {
   id: uuid(),
   slug: slugify('Abaata'),
   name: ' Abaata',
@@ -165,8 +171,9 @@ export const  Abaata: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/345215874.jpg?k=9f7a238f7f5f4d59c056ea26333158f4eea0e13cb339333545ffae48d108975e&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/232773042.jpg?k=d91543128d3f6a37e49b36d60834133325ae3aadb150bbf44b83327b628a3df3&o=&hp=1',
   ],
-  description: 'ეს არის ის ადგილი სადაც არ მოიწყენთ, სადაც ისიამოვნებთ და მეორედ  მონახულებასაც ისურვებთ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'ეს არის ის ადგილი სადაც არ მოიწყენთ, სადაც ისიამოვნებთ და მეორედ  მონახულებასაც ისურვებთ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -183,7 +190,7 @@ export const RitsaHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/84346116.jpg?k=fab1b78ce77bc3808ff932ebfb3f7575c8503cdc15e48c87c227f73eb29e030d&o=&hp=1',
   ],
   description: 'საუკეთესო გარემო',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -200,7 +207,7 @@ export const MenabdeWinery: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/310909212.jpg?k=ba435d216143bf0d2910050abdd80650d9e907d8bffad0ca9079d2a737bdec98&o=&hp=1',
   ],
   description: 'მშვიდი, სუფთა, ძალიან კარგი საკვები და შესანიშნავი მასპინძლები',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -217,7 +224,7 @@ export const Hotelpagio: Hotel = {
     'http://sastumroebi.ge/pagio-en#sast-8',
   ],
   description: 'კარგი გარემო კარგი მასპინძლებით',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -234,7 +241,7 @@ export const GuesthouseZedafoni: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/227760904.jpg?k=a33eb2f37e6600bd0f1453a8c55f03b458e463f1bd94f1ef58d09dc15c97b297&o=&hp=1',
   ],
   description: 'ლამაზი და მყუდრო გარემოა ',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -244,18 +251,18 @@ export const mtredebi: Hotel = {
   slug: slugify('mtredebi'),
   name: 'mtredebi',
   rating: Math.round(Math.random() * 2 + 3),
-  address: ' David Aghmashenebeli Avenue # 190 David Aghmashenebeli Avenue # 190, 3900 Samtredia',
+  address:
+    ' David Aghmashenebeli Avenue # 190 David Aghmashenebeli Avenue # 190, 3900 Samtredia',
   imageUrl: [
     'https://cf.bstatic.com/xdata/images/hotel/max1024x768/173118295.jpg?k=0a66f6e8cd6497ce113accf57644c51383ced95bf6bac740bff8d142e6cc8e09&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/176246292.jpg?k=4add24f4fe1150c57b63614baad6915e2a7befac4902a80dcc0b7a76b0384616&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/172798899.jpg?k=a4601d0f78838e294bc6a7071819c0dc938109c83a2865a815da89fd6d6443e3&o=&hp=1',
   ],
   description: 'სასიამოვნო ადგილია',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
-
 
 export const HappyStayHotel: Hotel = {
   id: uuid(),
@@ -269,7 +276,7 @@ export const HappyStayHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/134487566.jpg?k=f3db0b071f279a161ebf2ff2a9c6363e2aa44f6ab5eb29a1779dae0a42c7c3ff&o=&hp=1',
   ],
   description: 'კარგი ადგილი დროსი გასატარებლად',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -286,12 +293,12 @@ export const HotelImereti: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/142896463.jpg?k=2e08082c5fa0cb476214fe3beb0cbd1e97b7e49b4a8ae5fb2eb139eb1fda81a1&o=&hp=1',
   ],
   description: 'მშიდი და კარგი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
-export const  TskaltuboPlazaHotel: Hotel = {
+export const TskaltuboPlazaHotel: Hotel = {
   id: uuid(),
   slug: slugify(' TskaltuboPlazaHotel'),
   name: ' Tskaltubo Plaza Hotel',
@@ -302,8 +309,9 @@ export const  TskaltuboPlazaHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/45747588.jpg?k=56a2318a5657b20ac45d9591ab003214795d752b1fe06baaa324ed40900c9b23&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/45753315.jpg?k=ed2749b52d1afca981240fa0ce5c44d38a387f230cdc57e78d064274d1ed8b13&o=&hp=1',
   ],
-  description: 'უმშენიერესი ადგილია მეგობრებთან და ოჯახთან ერთად დროის გასატარებლად ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'უმშენიერესი ადგილია მეგობრებთან და ოჯახთან ერთად დროის გასატარებლად ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -320,7 +328,7 @@ export const Makratela: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/185577373.jpg?k=44f8889ab34962e88b50fda9233f277316350b9e8f82f3dac91d894ee7e42bf1&o=&hp=1',
   ],
   description: 'საოცარი ხალხი, საოცარი ბუნება, კარგი პირობები',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -337,7 +345,7 @@ export const ArtVillaKotekhi: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/355373443.jpg?k=cc5982dfe0d953a28ced240f64f1cf54d8dbbba6fecab3cd36bbb6f6bd4c10ac&o=&hp=1',
   ],
   description: 'ეს არის ადგილი სადაც დაგხვდებათ ულამაზესი გარემო',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -354,7 +362,7 @@ export const Talaveri: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/220635261.jpg?k=0d0cc8f29c02dd3b1f000559529dfba045101cb881e3053ef567ebcb39f5f0d5&o=&hp=1',
   ],
   description: 'ეს არის ადგილი სადაც დაგხვდებათ ულამაზესი და სასიამოვნო გარემო',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -371,7 +379,7 @@ export const Favourite: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/258366308.jpg?k=1400a263efcdc2fc019ab5b9de72a7db7c8bc0dd6d2828765d7dc022e6b9a9b2&o=&hp=1',
   ],
   description: 'ეს არის ის ადგილი სადაც ისიამოვნებთ და დაისვენებთ',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -388,7 +396,7 @@ export const KvareliLakeResort: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/222378115.jpg?k=8fd08d2c5dcec39de04cfd4c3c6a9de48bfcae9c588ce5eb9aadb31582956af2&o=&hp=1',
   ],
   description: 'ულამაზესი და დაუვიწყარი ადგილია',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -398,14 +406,15 @@ export const NaBaDa: Hotel = {
   slug: slugify('NaBaDa'),
   name: 'NaBaDa',
   rating: Math.round(Math.random() * 2 + 3),
-  address: ' tsageri municipality, The village Shua Agvi Tsageri zone: 89, Agvi sector: 12, Quarter 22, The plot 009, 5113 Tsʼageri, Georgia',
+  address:
+    ' tsageri municipality, The village Shua Agvi Tsageri zone: 89, Agvi sector: 12, Quarter 22, The plot 009, 5113 Tsʼageri, Georgia',
   imageUrl: [
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/203782603.jpg?k=183b539cb77b6972853c34409025bfca5370c7a2e1e0bb368efd0491c989d388&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/207282345.jpg?k=2ae26edf045e415f399888d85196bf3b5fccaceda31101222cab06f07ce3144e&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/203782619.jpg?k=5a2348485df2c13f6fe88469a8393295af56b9d5c243c5df0a4e31796c101ef3&o=&hp=1',
   ],
   description: 'ულამაზესი ადგილია დროის გასატარებლად',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -422,7 +431,7 @@ export const Pompeius: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/245403638.jpg?k=00fbed45c6ae0ee7bd5921e29682f213e8fda4dd25506e7306ee7cead8239e70&o=&hp=1',
   ],
   description: 'მყუდრო და სასიამოვნო გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -439,7 +448,7 @@ export const VeronaApartment: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/299108124.jpg?k=57663b08290cd573d56b0b9e8150e63ec92b3cc5dd8fbade38405ce13b5061bc&o=&hp=1',
   ],
   description: 'ულამაზესი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -456,7 +465,7 @@ export const BolnisiPrimeHouse: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/114427121.jpg?k=55e764da5a8674f479ee556b1799bcf78db7e4fc82dcdd20b6f7666bad647a24&o=&hp=1',
   ],
   description: 'ყველასათვის მყუდრო და თბილი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -473,7 +482,7 @@ export const HotelNabadiDmanisi: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/217837222.jpg?k=4da5a88a8d6fa095a04803fc6e6c539cd12370906b5659c961c1f08b7d8703cc&o=&hp=1',
   ],
   description: 'მობრძანდით და ისიამოვნეთ ჩვენთან',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -490,7 +499,7 @@ export const Home: Hotel = {
     'https://georgiantravelguide.com/storage/files/sastumro-poum-2.jpg',
   ],
   description: 'ეს არის ადგილისადაც ისიამოვნებთ და კარგ დროს გაატარებთ',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -507,7 +516,7 @@ export const OrionHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/359504616.jpg?k=7f33fce94dd06f488d64580f8fb57ff37f72a439d01900b86b582dfd411ccd76&o=&hp=1',
   ],
   description: 'ულამაზესი გარემო ულამაზესი ნომრებით',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -524,7 +533,7 @@ export const AMBROsador: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/197366064.jpg?k=9c7830bc3ff89ce82fd3ee3bd3d49db3b8746eaf66be11654ce4a88f698047d3&o=&hp=1',
   ],
   description: 'ლამაზი სასტუმრო ლამაზი ხედებით',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -541,12 +550,12 @@ export const MillenniumRabati: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/204162169.jpg?k=ee93e1bade0271f99cfe88d9323fc7c8bfe10d2136269ce5f561d0fec42af648&o=&hp=1',
   ],
   description: 'საუკეთესო ადგილი დროის სასიამოვნოდ გასატარებლად',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
-export const  cristal : Hotel = {
+export const cristal: Hotel = {
   id: uuid(),
   slug: slugify(' cristal '),
   name: ' cristal ',
@@ -558,7 +567,7 @@ export const  cristal : Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/246776642.jpg?k=87f6de26acdea49749a06daac6a1aeb0b020adc28faf02f458ac3cdb80a284b2&o=&hp=1',
   ],
   description: 'კარგი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -574,8 +583,9 @@ export const RetroHouse: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/100352480.jpg?k=9ecbb8c69daf0d8cf47c7bf14313c2e7d95736274b1f05c3025376de8e0f7460&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/100352482.jpg?k=56adb4cf07801f613582979a90be1a6ef6c98cfeca719270e4c081f03edeb3a1&o=&hp=1',
   ],
-  description: 'თუ გინდათ რომ გაატაროთ დღები სასიამოვნოდ უნდა მობრძანდეთ ჩვენთან',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'თუ გინდათ რომ გაატაროთ დღები სასიამოვნოდ უნდა მობრძანდეთ ჩვენთან',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -584,14 +594,15 @@ export const ResortMartvili: Hotel = {
   slug: slugify('ResortMartvili'),
   name: 'Resort Martvili',
   rating: Math.round(Math.random() * 2 + 3),
-  address: ' Martvili. Tavisufleba st. #8 The hotel is the third floor, 3100 Martvili, Georgia',
+  address:
+    ' Martvili. Tavisufleba st. #8 The hotel is the third floor, 3100 Martvili, Georgia',
   imageUrl: [
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/161250430.jpg?k=bc13f5c8badcd438897f9835912e466e812d8245c3036be17ba4ba3c39797bc0&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/161250446.jpg?k=72fbab7cf626b469846c3901c2bbfd93e8f837ee08266954b706dc528a38a6f1&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/162634549.jpg?k=377bee01b12ec09018fb255a857f96efc395585a3868f745b436cae461f6a303&o=&hp=1',
   ],
   description: 'მოდით და გაატარეთ დაუვიწყარი დღეები ჩვენთან ერთად',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -607,7 +618,7 @@ export const TomasSakhli: Hotel = {
     'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/28/26/d9/tomas-sakhli.jpg?w=800&h=-1&s=1',
   ],
   description: 'მყუდრო და თბილი გარემოა',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -623,7 +634,7 @@ export const DEA: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/213517649.jpg?k=394068d15bca0726be04e343627963060c21790d7285be12f45760c9fdce7e50&o=&hp=1',
   ],
   description: 'ლამაზი ადგილია',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -638,8 +649,9 @@ export const Hestia: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/322835395.jpg?k=d221f9db46e6b0d9f339cd3cf7700505668c6732d5ccb430adb325d41186359c&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/323190767.jpg?k=995e885742fa1ffac4a694521ec6afdbe675dc76b1d39ffad4f0ea24872dee98&o=&hp=1',
   ],
-  description: 'თუ გინდათ რომ გაატაროთ დაუვიწყარი დღეები მაშნ ჩვენთან უნდა მობრძანდეთ',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'თუ გინდათ რომ გაატაროთ დაუვიწყარი დღეები მაშნ ჩვენთან უნდა მობრძანდეთ',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -656,7 +668,7 @@ export const KaspiResort: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/335702196.jpg?k=f1f8140ac6f68e684efa7e0222ed3103b17a4bcff3de5aa6174a19c1f61a85b0&o=&hp=1',
   ],
   description: 'შესანიშნავი გარემო, მეგობრული პერსონალი და გემრიელი კერძები',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -673,7 +685,7 @@ export const HotelNatia: Hotel = {
     'https://hotel24.ge/jomres/uploadedimages/2292/rooms/4862/a5-guesthouse-natia-kintsvisi.jpg',
   ],
   description: 'კარგი გარემოა, შესანიშნავი პერსონალით',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -690,7 +702,7 @@ export const IveriaHotel: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/78904805.jpg?k=f6e48885e01f57aca46a554e01684287603bc4fea116e0ead8d568ece7b9c802&o=&hp=1',
   ],
   description: 'ეს არის ადგილი სადაც დაგვდებათ სასიამოვნო გარემო',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -705,8 +717,9 @@ export const WinterFellMestia: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/360955078.jpg?k=09d75877b355e5d4ef47d3b89d1970cd65bfc7ab2ff288459f3842e570605988&o=&hp=1',
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/337446705.jpg?k=58533baf4453842aad2d3b5e48fcbe2a96077e8c52c5519cad4b74a07b6b7173&o=&hp=1',
   ],
-  description: 'ეს არის ადგილი სადაც დაგხვდებათ ძალიან კარგი გარემო ულამაზესი ხედებით,სადაც გაატარებთ დაუვიწყარ დღეებს',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'ეს არის ადგილი სადაც დაგხვდებათ ძალიან კარგი გარემო ულამაზესი ხედებით,სადაც გაატარებთ დაუვიწყარ დღეებს',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -723,7 +736,7 @@ export const HotelSvaneti: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/192989458.jpg?k=37e1dd27804709a6268d72dc581987dcef581d358e162808b8f24e4da09f2b7c&o=&hp=1',
   ],
   description: 'მეგობრული პერსონალი,ულამაზესი ნომრები,ულამაზესი გარემო ',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
@@ -739,12 +752,12 @@ export const RustaviHotel: Hotel = {
     'https://georgiantravelguide.com/storage/files/dupleks-apartamenti-bakurianshi-3.jpg',
   ],
   description: 'საუკეთესო გარემო',
-  price: Math.floor(Math.random() * (81) + 20),
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
 
-export const  Laerton: Hotel = {
+export const Laerton: Hotel = {
   id: uuid(),
   slug: slugify(' Laerton'),
   name: ' Laerton',
@@ -755,12 +768,12 @@ export const  Laerton: Hotel = {
     'https://pix8.agoda.net/hotelImages/889/889419/889419_17051518510052999859.jpg?ca=6&ce=1&s=1024x',
     'https://pix8.agoda.net/hotelImages/889/889419/889419_17051518510052999858.jpg?ca=6&ce=1&s=1024x',
   ],
-  description: 'მშვენივრად დაიწყებთ თქვენი მოგზაურობა ამ სასტუმროში ყოფნით, რომელიც გთავაზობთ უფასო Wi-Fi-ს ყველა ოთახში. სასტუმრო მდებარეობს თბილისის ცენტრში',
-  price: Math.floor(Math.random() * (81) + 20),
+  description:
+    'მშვენივრად დაიწყებთ თქვენი მოგზაურობა ამ სასტუმროში ყოფნით, რომელიც გთავაზობთ უფასო Wi-Fi-ს ყველა ოთახში. სასტუმრო მდებარეობს თბილისის ცენტრში',
+  price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
 };
-
 
 export const hotels: Hotel[] = [
   RustaviHotel,
@@ -771,42 +784,40 @@ export const hotels: Hotel[] = [
   Orbicityseaview,
   Leon,
   AleksandriA,
-BoutiqueHotelAnana,
-EcoPapaHotel,
-Abaata,
-RitsaHotel,
-MenabdeWinery,
- Hotelpagio,
-GuesthouseZedafoni,
-mtredebi,
-HappyStayHotel,
-HotelImereti,
-TskaltuboPlazaHotel,
-Makratela,
-ArtVillaKotekhi,
-Talaveri,
-Favourite,
-KvareliLakeResort,
-NaBaDa,
-Pompeius,
-VeronaApartment,
-BolnisiPrimeHouse,
-HotelNabadiDmanisi,
-Home,
-OrionHotel,
-AMBROsador,
-MillenniumRabati,
-cristal,
-RetroHouse,
-ResortMartvili,
-TomasSakhli,
-DEA,
-Hestia,
-KaspiResort,
-HotelNatia,
-IveriaHotel,
-WinterFellMestia,
-HotelSvaneti
-
-
+  BoutiqueHotelAnana,
+  EcoPapaHotel,
+  Abaata,
+  RitsaHotel,
+  MenabdeWinery,
+  Hotelpagio,
+  GuesthouseZedafoni,
+  mtredebi,
+  HappyStayHotel,
+  HotelImereti,
+  TskaltuboPlazaHotel,
+  Makratela,
+  ArtVillaKotekhi,
+  Talaveri,
+  Favourite,
+  KvareliLakeResort,
+  NaBaDa,
+  Pompeius,
+  VeronaApartment,
+  BolnisiPrimeHouse,
+  HotelNabadiDmanisi,
+  Home,
+  OrionHotel,
+  AMBROsador,
+  MillenniumRabati,
+  cristal,
+  RetroHouse,
+  ResortMartvili,
+  TomasSakhli,
+  DEA,
+  Hestia,
+  KaspiResort,
+  HotelNatia,
+  IveriaHotel,
+  WinterFellMestia,
+  HotelSvaneti,
 ];

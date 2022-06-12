@@ -15,8 +15,7 @@ export class RestaurantEntity implements Restaurant {
 
   @Column({
     type: 'decimal',
-    precision: 3,
-    scale: 2,
+    precision: 1,
     name: 'rating',
   })
   rating!: number;
