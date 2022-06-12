@@ -1208,7 +1208,7 @@ export const TbilisiCity3: City = {
   updatedAt: formatISO(new Date()),
 };
 export const cities: City[] = [
-  fox / rustavi,
+  rustavi,
   qobuleti,
   khulo,
   qeda,
