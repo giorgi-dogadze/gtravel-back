@@ -22,6 +22,14 @@ export class DishEntity implements Dish {
   @ManyToMany(() => RegionEntity, (region) => region.dishes)
   regions!: RegionEntity[];
 
+  @Column({
+    type: 'decimal',
+    precision: 3,
+    scale: 2,
+    name: 'rating',
+  })
+  rating!: number;
+  
   @Column({ type: 'timestamp', name: 'created_at' })
   createdAt!: string;
 

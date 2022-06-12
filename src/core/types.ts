@@ -65,6 +65,7 @@ export interface Dish {
   name: string;
   composition: string;
   imageUrl: string;
+  rating: number;
   createdAt: string;
   updatedAt: string;
 }
@@ -97,6 +98,7 @@ export interface Hotel {
 export interface Sightseeing {
   description: string;
   imageUrl: string;
+  rating: number;
 }
 
 export enum TransportType {
