@@ -56,6 +56,9 @@ export class CityEntity implements City {
   @Column({ type: 'varchar', name: 'history' })
   history!: string;
 
+  @Column({ type: 'varchar', name: 'image_url', array: true })
+  imageUrl!: string[];
+
   @ManyToOne(() => RegionEntity, (region) => region.cities)
   @JoinColumn({ name: 'region_id' })
   region!: RegionEntity;

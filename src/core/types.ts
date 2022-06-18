@@ -38,6 +38,7 @@ export interface City {
   description: string;
   sightseeing: Sightseeing;
   history: string;
+  imageUrl: string[];
   restaurants: Restaurant[];
   hotels: Hotel[];
   createdAt: string;
