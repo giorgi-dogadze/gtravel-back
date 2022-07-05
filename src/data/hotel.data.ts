@@ -650,7 +650,7 @@ export const Hestia: Hotel = {
     'https://cf.bstatic.com/xdata/images/hotel/max1280x900/323190767.jpg?k=995e885742fa1ffac4a694521ec6afdbe675dc76b1d39ffad4f0ea24872dee98&o=&hp=1',
   ],
   description:
-    'თუ გინდათ რომ გაატაროთ დაუვიწყარი დღეები მაშნ ჩვენთან უნდა მობრძანდეთ',
+    'თუ გინდათ რომ გაატაროთ დაუვიწყარი დღეები მაშინ ჩვენთან უნდა მობრძანდეთ',
   price: Math.floor(Math.random() * 81 + 20),
   createdAt: formatISO(new Date()),
   updatedAt: formatISO(new Date()),
@@ -775,7 +775,42 @@ export const Laerton: Hotel = {
   updatedAt: formatISO(new Date()),
 };
 
+export const AIVANI: Hotel = {
+  id: uuid(),
+  slug: slugify('AIVANI'),
+  name: ' AIVANI HOTEL',
+  rating: Math.round(Math.random() * 2 + 3),
+  address: 'თბილისი, სამღებროს 21',
+  imageUrl: [
+    'https://cdn.swoop.ge/ImagesStorage/27b102da-31ab-449a-9556-c5fb72411557.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/62782c02-513e-4e74-8f24-a2961affe4e1.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/e548e7a5-bb09-4af6-9af9-0fc31ef943df.jpg',
+  ],
+  description:
+    'მშვენივრად დაიწყებთ თქვენი მოგზაურობა ამ სასტუმროში ყოფნით, რომელიც გთავაზობთ უფასო Wi-Fi-ს ყველა ოთახში. სასტუმრო მდებარეობს თბილისის ცენტრში',
+  price: Math.floor(Math.random() * 81 + 20),
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
+export const Danaeva: Hotel = {
+  id: uuid(),
+  slug: slugify('Danaeva'),
+  name: 'Danaeva',
+  rating: Math.round(Math.random() * 2 + 3),
+  address: '300 არაგველის 1, დოლაბაურის 58',
+  imageUrl: [
+    'https://cdn.swoop.ge/ImagesStorage/0017e6cb-22ea-4918-9304-f824a1b79208.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/69035fb6-67b7-4cd4-b5b4-c572ae1c7168.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/671915fc-1fed-4606-afdd-ceee269313ec.jpg',
+  ],
+  description:
+    'თუ გინდათ რომ გაატაროთ დაუვიწყარი დღეები მაშინ ჩვენთან უნდა მობრძანდეთ',
+  price: Math.floor(Math.random() * 81 + 20),
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
 export const hotels: Hotel[] = [
+  Danaeva
   RustaviHotel,
   ChateauKvirike,
   AmbassadoriGoderdziHotel,

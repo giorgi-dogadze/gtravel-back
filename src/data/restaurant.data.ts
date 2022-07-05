@@ -3,7 +3,37 @@ import { slugify } from 'src/core/utils';
 import { v4 as uuid } from 'uuid';
 import { formatISO } from 'date-fns';
 
+export const  NewEra: Restaurant = {
+  id: uuid(),
+  slug: slugify('New Era'),
+  name: 'New Era',
+  rating: Math.round(Math.random() * 2 + 3),
+  address: 'მუხათგვერდის ტერიტორია',
+  imageUrl: [
+    'https://cdn.swoop.ge/ImagesStorage/d4b4e861-3037-44b1-8160-0647afb3e20a.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/490d54dc-8f73-4d73-a461-a8b223de356f.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/3003c4e1-3faf-402d-b8c8-2eafa9267048.jpg',
+  ],
+  description: 'ულამაზესი გარემო,უგემრიელესი კერძები',
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
 
+export const  Accent : Restaurant = {
+  id: uuid(),
+  slug: slugify('Accent Bar & Kitchen'),
+  name: 'Accent Bar & Kitchen',
+  rating: Math.round(Math.random() * 2 + 3),
+  address: 'თბილისი. ძმები ზდანევიჩების 5 / 5 Dzmebi Zdanevichebi St',
+  imageUrl: [
+    'https://cdn.swoop.ge/ImagesStorage/494e5b51-0c9d-488d-adb2-a840ccea1ad5.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/6cb9c15a-1462-4feb-9c71-772d63d611fa.jpg',
+    'https://cdn.swoop.ge/ImagesStorage/80e9760c-0722-4017-a6a8-ffa1c85c4e75.jpg',
+  ],
+  description: 'ულამაზესი გარემო,უგემრიელესი კერძები',
+  createdAt: formatISO(new Date()),
+  updatedAt: formatISO(new Date()),
+};
 
 export const  QebuliKobuleti: Restaurant = {
   id: uuid(),
@@ -725,6 +755,8 @@ export const TiflisiVeranda: Restaurant = {
   updatedAt: formatISO(new Date()),
 };
 export const restaurants: Restaurant[] = [
+  NewEra,
+  Accent,
   TiflisiVeranda,
   QebuliKobuleti,
   BegheliKhulo,
