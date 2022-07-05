@@ -64,7 +64,7 @@ export interface Dish {
   id: string;
   slug: string;
   name: string;
-  composition: string;
+  composition: string[];
   imageUrl: string;
   rating: number;
   createdAt: string;
