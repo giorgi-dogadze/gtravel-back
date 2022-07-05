@@ -87,7 +87,7 @@ import {
 export const achara: Region = {
   id: uuid(),
   slug: slugify('achara'),
-  name: 'achara',
+  name: 'აჭარა',
   area: 3794,
   regionCenter: batumi,
   population: 346347,
@@ -107,7 +107,7 @@ export const achara: Region = {
 export const lechkhumi: Region = {
   id: uuid(),
   slug: slugify('lechkhumi'),
-  name: 'lechkhumi',
+  name: 'ლეჩხუმი',
   area: 719,
   regionCenter: tsageri,
   population: 9387,
@@ -127,7 +127,7 @@ export const lechkhumi: Region = {
 export const samegrelo: Region = {
   id: uuid(),
   slug: slugify('samegrelo'),
-  name: 'samegrelo',
+  name: 'სამეგრელო',
   area: 7093,
   regionCenter: zugdidi,
   population: 278447,
@@ -147,7 +147,7 @@ export const samegrelo: Region = {
 export const guria: Region = {
   id: uuid(),
   slug: slugify('guria'),
-  name: 'guria',
+  name: 'გურია',
   area: 2033,
   regionCenter: ozurgeti,
   population: 107100,
@@ -167,7 +167,7 @@ export const guria: Region = {
 export const samckheJavakheti: Region = {
   id: uuid(),
   slug: slugify('samckheJavakheti'),
-  name: 'samckheJavakheti',
+  name: 'სამცხე-ჯავახეთი',
   area: 6413,
   regionCenter: akhalcikhe,
   population: 155900,
@@ -187,7 +187,7 @@ export const samckheJavakheti: Region = {
 export const afkhazeti: Region = {
   id: uuid(),
   slug: slugify('afkhazeti'),
-  name: 'afkhazeti',
+  name: 'აფხაზეთი',
   area: 242000,
   regionCenter: sokhumi,
   population: 8665,
@@ -206,7 +206,7 @@ export const afkhazeti: Region = {
 export const svaneti: Region = {
   id: uuid(),
   slug: slugify('svaneti'),
-  name: 'svaneti',
+  name: 'სვანეთი',
   area: 5776.4,
   regionCenter: mestia,
   population: 13702,
@@ -227,7 +227,7 @@ export const svaneti: Region = {
 export const racha: Region = {
   id: uuid(),
   slug: slugify('racha'),
-  name: 'racha',
+  name: 'რაჭა',
   area: 2.89,
   regionCenter: oni,
   population: 15000,
@@ -247,7 +247,7 @@ export const racha: Region = {
 export const imereti: Region = {
   id: uuid(),
   slug: slugify('imereti'),
-  name: 'imereti',
+  name: 'იმერეთი',
   area: 6516,
   regionCenter: qutaisi,
   population: 533906,
@@ -267,7 +267,7 @@ export const imereti: Region = {
 export const tbilisi: Region = {
   id: uuid(),
   slug: slugify('itbilisi'),
-  name: 'tbilisi',
+  name: 'თბილისი',
   area: 720,
   regionCenter: null,
   population: 1118035,
@@ -287,7 +287,7 @@ export const tbilisi: Region = {
 export const kakheti: Region = {
   id: uuid(),
   slug: slugify('kakheti'),
-  name: 'kakheti',
+  name: 'კახეთი',
   area: 11309.5,
   regionCenter: telavi,
   population: 318583,
@@ -307,7 +307,7 @@ export const kakheti: Region = {
 export const mckhetaMtianeti: Region = {
   id: uuid(),
   slug: slugify('mcmtianeti'),
-  name: 'mckhetaMtianeti',
+  name: 'მცხეთა მთიანეთი',
   area: 6785,
   regionCenter: chiatura,
   population: 94573,
@@ -327,7 +327,7 @@ export const mckhetaMtianeti: Region = {
 export const shidaQartli: Region = {
   id: uuid(),
   slug: slugify('shqartli'),
-  name: 'shidaQartli',
+  name: 'შიდა ქართლი',
   area: 4807,
   regionCenter: gori,
   population: 263382,
