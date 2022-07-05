@@ -33,7 +33,7 @@ export class CityEntity implements City {
 
   @Column({
     type: 'decimal',
-    precision: 7,
+    precision: 9,
     scale: 1,
     name: 'population',
   })

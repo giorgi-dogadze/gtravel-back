@@ -11,7 +11,11 @@ export class CityService {
   async findAll(): Promise<ResultList<City>> {
     const cities = await this.repo.findAll();
 
-    return { items: cities, count: cities.length };
+    const filteredCities = cities.filter(
+      (city) => !city.name.includes('TbilisiCity'),
+    );
+
+    return { items: filteredCities, count: cities.length };
   }
 
   async readBySlug(props: CitySlugParam): Promise<CityEntity> {
