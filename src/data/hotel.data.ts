@@ -810,7 +810,9 @@ export const Danaeva: Hotel = {
   updatedAt: formatISO(new Date()),
 };
 export const hotels: Hotel[] = [
-  Danaeva
+  Danaeva,
+  Laerton,
+  AIVANI,
   RustaviHotel,
   ChateauKvirike,
   AmbassadoriGoderdziHotel,
